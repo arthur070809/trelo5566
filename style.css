@@ -1,0 +1,242 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: #0079bf;
+    color: #172b4d;
+    min-height: 100vh;
+}
+
+/* Barra de Navegação */
+.navbar {
+    background-color: #026aa7;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 24px;
+}
+
+.logo-text {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.user-menu {
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.user-menu:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+/* Quadro Principal */
+.board-container {
+    padding: 20px;
+    overflow-x: auto;
+    height: calc(100vh - 60px);
+}
+
+.board {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    min-height: 100%;
+}
+
+/* Estilos das Colunas */
+.column {
+    background-color: #ebecf0;
+    border-radius: 4px;
+    width: 280px;
+    min-width: 280px;
+    padding: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.column-header {
+    padding: 10px 8px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column-title {
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.column-actions {
+    color: #5e6c84;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.column-actions:hover {
+    background-color: rgba(9,30,66,0.1);
+}
+
+/* Estilos dos Cartões */
+.cards-list {
+    margin: 8px 0;
+    min-height: 10px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, 0.1);
+    padding: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.card:hover {
+    background-color: #f5f6f8;
+}
+
+.card-label {
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    width: 40px;
+}
+
+.label-green {
+    background-color: #61bd4f;
+}
+
+.label-blue {
+    background-color: #0079bf;
+}
+
+.label-yellow {
+    background-color: #f2d600;
+}
+
+.label-orange {
+    background-color: #ff9f1a;
+}
+
+.label-purple {
+    background-color: #c377e0;
+}
+
+.label-red {
+    background-color: #eb5a46;
+}
+
+.card-content {
+    margin-bottom: 8px;
+}
+
+.card-footer {
+    display: flex;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #5e6c84;
+    gap: 8px;
+}
+
+.card-badge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Botões */
+.add-card {
+    color: #5e6c84;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none;
+    background: none;
+    transition: all 0.2s;
+}
+
+.add-card:hover {
+    background-color: rgba(9, 30, 66, 0.08);
+    color: #172b4d;
+}
+
+.add-card::before {
+    content: "+";
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.add-column {
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 4px;
+    color: white;
+    padding: 10px 12px;
+    width: 280px;
+    min-width: 280px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.add-column:hover {
+    background-color: rgba(255, 255, 255, 0.32);
+}
+
+.add-column::before {
+    content: "+";
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+/* Barra de Rolagem */
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}

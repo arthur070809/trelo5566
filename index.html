@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Clone - Quadro Kanban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">📊</span>
+            <span class="logo-text">Meu Quadro Kanban</span>
+        </div>
+        <div class="user-menu">Minha Conta</div>
+    </nav>
+    
+    <!-- Quadro Kanban -->
+    <div class="board-container">
+        <div class="board">
+            <!-- Coluna 1 -->
+            <div class="column">
+                <div class="column-header">
+                    <div class="column-title">A Fazer</div>
+                    <div class="column-actions">⋮</div>
+                </div>
+                <div class="cards-list">
+                    <div class="card">
+                        <div class="card-label label-green"></div>
+                        <div class="card-content">Definir escopo do projeto</div>
+                        <div class="card-footer">
+                            <span class="card-badge">📅 Hoje</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">Criar wireframes</div>
+                    </div>
+                </div>
+                <button class="add-card">Adicionar cartão</button>
+            </div>
+            
+            <!-- Coluna 2 -->
+            <div class="column">
+                <div class="column-header">
+                    <div class="column-title">Em Progresso</div>
+                    <div class="column-actions">⋮</div>
+                </div>
+                <div class="cards-list">
+                    <div class="card">
+                        <div class="card-label label-blue"></div>
+                        <div class="card-content">Desenvolver layout principal</div>
+                    </div>
+                </div>
+                <button class="add-card">Adicionar cartão</button>
+            </div>
+            
+            <!-- Coluna 3 -->
+            <div class="column">
+                <div class="column-header">
+                    <div class="column-title">Revisão</div>
+                    <div class="column-actions">⋮</div>
+                </div>
+                <div class="cards-list">
+                    <div class="card">
+                        <div class="card-content">Testar funcionalidades</div>
+                        <div class="card-footer">
+                            <span class="card-badge">👥 2</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-card">Adicionar cartão</button>
+            </div>
+            
+            <!-- Coluna 4 -->
+            <div class="column">
+                <div class="column-header">
+                    <div class="column-title">Concluído</div>
+                    <div class="column-actions">⋮</div>
+                </div>
+                <div class="cards-list">
+                    <div class="card">
+                        <div class="card-label label-purple"></div>
+                        <div class="card-content">Configurar ambiente</div>
+                    </div>
+                </div>
+                <button class="add-card">Adicionar cartão</button>
+            </div>
+            
+            <!-- Botão para adicionar nova coluna -->
+            <button class="add-column">Adicionar lista</button>
+        </div>
+    </div>
+</body>
+</html>
